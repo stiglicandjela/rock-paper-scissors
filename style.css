@@ -1,12 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
 
-*{
-    background-color: black;
+* {
+    background-image: url('img/2e996671ac787cdb6640ae8463f693aa.gif');
+    background-repeat: repeat;
 }
+
 
 body{
     display: flex;
-    justify-content: center;
+    flex-direction: column;
 }
 
 .title{
@@ -19,6 +21,10 @@ h1{
      text-align: center;
      font-size: 80px;
      margin-bottom: auto;
+   text-shadow: 
+        2px 2px 0px rgb(198,159,165),   
+       -2px -2px 0px rgb(39,39,68),      
+        2px -2px 0px rgb(242,211,171);  
 }
 
 h2{
@@ -26,4 +32,106 @@ h2{
      color: white;
      text-align: center;
      font-size: 40px;
+   text-shadow: 
+        2px 2px 0px rgb(198,159,165),   
+       -2px -2px 0px rgb(39,39,68),      
+        2px -2px 0px rgb(242,211,171);   
     }
+
+.playing{
+    display: flex;
+    margin: auto;
+    gap: 150px;
+    margin-bottom: 10%;
+}
+
+.cards-human{
+    display: flex;
+    flex-direction: row;
+    height: 160px;
+    margin-left: auto;
+}
+
+.cards-computer{
+    display: flex;
+    flex-direction: row;
+    height: 160px;
+    margin-right: auto;
+}
+
+.cards-human .card img{
+        box-shadow: 0 0 20px 5px rgba(198, 159, 165, 0.6);
+}
+.card{
+    padding: 15px;
+}
+
+.card img {
+    width: 200px;          
+    height: auto;          
+    image-rendering: pixelated;
+}
+
+.cards-human .card {
+    transition: transform 0.3s ease;
+}
+
+.cards-human .card:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+    image-rendering: pixelated;
+}
+
+.cards-human .card img:hover{
+    box-shadow: 0 0 20px 5px rgba(255, 255, 255, 0.6);
+}
+
+
+.players{
+    display: flex;
+    flex-direction: row;
+    gap: 30%;
+    justify-content: center;
+    margin-bottom: 0;
+}
+
+.hearts{
+    display: flex;
+}
+
+.human-hearts{
+    margin-right: auto;
+    padding-left: 15%;
+}
+
+.hearts img {
+    width: 85px;
+    height: auto;
+    image-rendering: pixelated;
+
+}
+
+
+.computer-hearts{
+    margin-left: auto;
+    padding-right: 18%;
+}
+
+.glow-red {
+  animation: glowRed 0.3s ease;
+}
+
+@keyframes glowRed {
+  0% {
+    transform: scale(1);
+    box-shadow: none;
+  }
+  50% {
+    transform: scale(1.1);
+    box-shadow: 0 0 15px red;
+  }
+  100% {
+    transform: scale(1);
+    box-shadow: none;
+  }
+}

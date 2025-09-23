@@ -9,20 +9,41 @@
 <body>
     <div class="title">
     <h1>ROCK PAPER SCISSORS</h1>
-    <h2>ROUND 1</h2>
+    <h2 id="round">ROUND 1</h2>
     </div>
     <div class="playing">
         <div class="cards-human">
-            <div class="card"></div>
-            <div class="card"></div>
-            <div class="card"></div>
+            <div class="card" id="rock"><img src="img/kamen-kartica.png" alt="rock"></div>
+            <div class="card" id="paper"><img src="img/papir-kartica.png" alt="paper"></div>
+            <div class="card" id="scissors"><img src="img/makaze-kartica.png" alt="scissors"></div>
         </div>
         <div class="cards-computer">
-            <div class="card"></div>
-            <div class="card"></div>
-            <div class="card"></div>
+            <div class="card" id="rockPC"><img src="img/kamen-kartica.png" alt="rock"></div>
+            <div class="card" id="paperPC"><img src="img/papir-kartica.png" alt="paper"></div>
+            <div class="card" id="scissorsPC"><img src="img/makaze-kartica.png" alt="scissors"></div>
+        </div>
+    </div>
+    <div class="players">
+        <h2>YOU</h2>
+        <h2>COMPUTER</h2>
+    </div>
+    <div class="hearts">
+        <div class="human-hearts">
+            <img src="img/srce.png" alt="heart" class="heart">
+            <img src="img/srce.png" alt="heart" class="heart">
+            <img src="img/srce.png" alt="heart" class="heart">
+            <img src="img/srce.png" alt="heart" class="heart">
+            <img src="img/srce.png" alt="heart" class="heart">
+        </div>
+        <div class="computer-hearts">
+            <img src="img/srce.png" alt="heart" class="heart">
+            <img src="img/srce.png" alt="heart" class="heart">
+            <img src="img/srce.png" alt="heart" class="heart">
+            <img src="img/srce.png" alt="heart" class="heart">
+            <img src="img/srce.png" alt="heart" class="heart">
         </div>
     </div>
     <script src="script.js"></script>
+    <script src="script.js" defer></script>
 </body>
 </html>
