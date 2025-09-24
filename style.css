@@ -62,7 +62,8 @@ h2{
 .cards-human .card img{
         box-shadow: 0 0 20px 5px rgba(198, 159, 165, 0.6);
 }
-.card{
+.card,
+.card-human{
     padding: 15px;
 }
 
@@ -72,17 +73,23 @@ h2{
     image-rendering: pixelated;
 }
 
-.cards-human .card {
+.card-human img{
+    width: 200px;          
+    height: auto;          
+    image-rendering: pixelated;
+}
+
+.cards-human .card-human {
     transition: transform 0.3s ease;
 }
 
-.cards-human .card:hover{
+.cards-human .card-human:hover{
     cursor: pointer;
     transform: scale(1.1);
     image-rendering: pixelated;
 }
 
-.cards-human .card img:hover{
+.cards-human .card-human img:hover{
     box-shadow: 0 0 20px 5px rgba(255, 255, 255, 0.6);
 }
 

@@ -7,7 +7,7 @@ const roundHeading = document.getElementById('round');
 const options = ["rock", "paper", "scissors"];
 const getComputerChoice = () => options[Math.floor(Math.random() * 3)];
 
-const cards = document.querySelectorAll('.card');
+const cards = document.querySelectorAll('.card-human');
 
 const playerHearts = document.querySelectorAll('.human-hearts .heart');
 const computerHearts = document.querySelectorAll('.computer-hearts .heart');
