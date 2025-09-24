@@ -1,6 +1,6 @@
 let playerLives = 5;
 let computerLives = 5;
-
+//testing why my github is being difficult
 let round = 1; 
 const roundHeading = document.getElementById('round');
 
